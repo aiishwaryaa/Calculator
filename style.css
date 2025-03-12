@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    
+    background: linear-gradient(-45deg,hsl(325, 61%, 59%),rgb(71, 71, 185),rgb(167, 19, 75),rgb(38, 38, 214));
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    animation: gradient 15s ease infinite;
+    background-size: 400%  400%;
+
+}
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0%  50%;
+    }
+}
+
+.main{
+    width: 400px;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0  5px 9px;
+    position:absolute;
+    background-color: rgb(11, 32, 57);
+    border: 5px solid  white;
+
+}
+.main input[type = "text"]{
+    width: 88%;
+    height: 80px;
+    text-align: right;
+    position: relative;
+    top:10px;
+    padding: 3px 6px;
+    font-size: 40px;
+    color: rgb(13, 38, 80);
+    outline: none;
+    border: 5px solid rgb(155, 159, 167);
+    border-radius: 6px;
+    margin: auto;
+    display: flex;
+}
+.btn input[type ="button"]{
+    width:90px;
+    padding: 2px;
+    margin: 2px 0px;
+    position: relative;
+    left:13px;
+    top:20px;
+    height:60px;
+    cursor: pointer;
+    background-color :#338ad6 ;
+    color:white;
+    font-weight: bolder;
+    border-radius: 6px;
+    font-size: 18px;
+}
+.btn input[type="button"]:hover{
+    background-color: rgb(17, 56, 91);
+    color:white;
+}
